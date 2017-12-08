@@ -1,6 +1,6 @@
 [user]
-  name = Evgeniy Maslov
-  email = xarimanx@gmail.com
+  name = Eduard Kolenov
+  email = kolenov.ed@gmail.com
 [color]
   ui = auto
   branch = auto
@@ -16,7 +16,7 @@
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
 [core]
   editor = subl -w
-  excludesfile = /Users/eum/.gitignore_global
+  excludesfile = /Users/erk/.gitignore_global
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path =
