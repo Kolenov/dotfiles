@@ -15,7 +15,7 @@
   br = branch
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
 [core]
-  editor = subl -w
+  editor = /Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code
   excludesfile = /Users/erk/.gitignore_global
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
