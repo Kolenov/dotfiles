@@ -37,6 +37,16 @@ alias bop='bundle open'
 alias wip='bundle exec cucumber -p wip'
 alias rbp_report='rails_best_practices -f html --with-textmate && open rails_best_practices_output.html'
 
+# GIT
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+
 # Enable programmable completion features for ports
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
