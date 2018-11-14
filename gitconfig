@@ -30,6 +30,6 @@
   smudge = git-lfs smudge %f
   required = true
 [commit]
-	template = /Users/erk/.stCommitMsg
+  template = /Users/erk/.stCommitMsg
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
