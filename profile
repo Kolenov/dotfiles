@@ -8,11 +8,13 @@ export HISTCONTROL=ignoreboth
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
 export ARCHFLAGS="-arch x86_64"
+
 # Color prompt with showing current git branch
 GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWSTASHSTATE=true
 PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;33m\]\w\[\033[00m\]\[\033[01;31m\]$(__git_ps1 " {%s}")\[\033[00m\] }\[\e[0;31m\]:\[\033[00m\]-> '
+
 ssh-add -K ~/.ssh/id_rsa
 
 export LC_CTYPE=en_US.UTF-8
@@ -38,6 +40,5 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

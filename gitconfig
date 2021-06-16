@@ -16,7 +16,7 @@
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
 [core]
   editor = /Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code
-  excludesfile = /Users/erk/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path =
@@ -30,6 +30,6 @@
   smudge = git-lfs smudge %f
   required = true
 [commit]
-  template = /Users/erk/.stCommitMsg
+  template = ~/.stCommitMsg
 [credential]
   helper = osxkeychain
